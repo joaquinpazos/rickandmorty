@@ -7,18 +7,16 @@ import RickandMorty from './rickandmorty.json';
 function App() {
   return (
     <div className="App">
-      <header>
-        <div>
+      <header className='Header'>
           <Header/>
-        </div>
       </header>
 
-      <div>
+      <div className='contenedor'>
       {
-        RickandMorty.map(function (personajes , idx){
+        RickandMorty.map(function (personaje , idx){
           return(
             <div key= {idx}>
-              <Personaje personajes={personajes}/>
+              <Personaje personaje={personaje}/>
             </div> 
           )
         })
@@ -26,7 +24,7 @@ function App() {
       }
       </div>
 
-      <footer>
+      <footer className='Footer'>
         <div>
           <Footer/>
         </div>
