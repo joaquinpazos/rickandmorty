@@ -5,6 +5,7 @@ import Footer from './componentes/Footer';
 import RickandMorty from './rickandmorty.json';
 
 function App() {
+  //console.log(RickandMorty);
   return (
     <div className="App">
       <header className='Header'>
